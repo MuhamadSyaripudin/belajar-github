@@ -2,17 +2,23 @@
 <html lang="id">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portofolio Muhamad Syaripudin</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <header>
         <div class="container">
+            <img src="img/IMG_4538.JPG" alt="Foto Profil" class="profile-img">
             <h1>Muhamad Syaripudin</h1>
-            <p>Mahasiswa Teknik Informatika | Wakil Ketua BEM Fasilkom</p>
+            <p>Mahasiswa Teknik Informatika | Wakil Ketua BEM FIKI</p>
+            <div class="social-links">
+                <a href="https://github.com/MuhamadSyaripudin" target="_blank">GitHub</a>
+                <a href="www.linkedin.com/in/muhamad-syaripudin-833264290" target="_blank">LinkedIn</a>
+            </div>
         </div>
     </header>
 
@@ -20,8 +26,7 @@
         <div class="container">
             <h2>Tentang Saya</h2>
             <p>Saya adalah mahasiswa semester 6 jurusan Teknik Informatika yang aktif dalam organisasi kemahasiswaan.
-                Saat ini menjabat sebagai Wakil Ketua BEM Fasilkom dan memiliki minat di bidang pengembangan aplikasi
-                Android, AI, dan analisis data.</p>
+                Saya memiliki ketertarikan dalam pengembangan aplikasi mobile, AI, dan analisis data.</p>
         </div>
     </section>
 
@@ -31,12 +36,11 @@
             <ul>
                 <li>
                     <h3>Aplikasi Data Mahasiswa</h3>
-                    <p>Aplikasi Android untuk input dan pengelolaan data mahasiswa menggunakan Android Studio.</p>
+                    <p>Android app untuk input dan manajemen data mahasiswa berbasis SQLite & Firebase.</p>
                 </li>
                 <li>
                     <h3>Analisis Sentimen Kebijakan Pendidikan</h3>
-                    <p>Proyek akhir menggunakan SVM untuk menganalisis opini masyarakat dari media sosial terhadap
-                        kebijakan pendidikan di Indonesia.</p>
+                    <p>Proyek akhir menggunakan Support Vector Machine untuk klasifikasi opini dari media sosial.</p>
                 </li>
             </ul>
         </div>
@@ -44,9 +48,19 @@
 
     <section class="contact">
         <div class="container">
-            <h2>Kontak</h2>
-            <p>Email: syaripudin@example.com</p>
-            <p>Instagram: <a href="https://instagram.com/username" target="_blank">@username</a></p>
+            <h2>Hubungi Saya</h2>
+            <form action="#" method="POST">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
         </div>
     </section>
 
@@ -55,6 +69,7 @@
             <p>&copy; 2025 Muhamad Syaripudin. All rights reserved.</p>
         </div>
     </footer>
+
 </body>
 
 </html>
